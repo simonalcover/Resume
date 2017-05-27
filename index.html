@@ -23,53 +23,62 @@
     <!-- CSS Chart JS -->
     <script src="bower_components/csscharts.js/jquery.chart.js"></script>
     <style>
-    .side-nav li.socialLinkTab {
-        padding-left:32px;
-    }
-    .side-nav li>a.socialLink {
-        display: inline-block;
-        padding: 0 2px;
-        font-size:1.7em;
-    }
-    .button-collapse i {
-        margin-top:1em;
-    }
-    .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
-        margin: 0 0px 0 0;
-    }
-    header, main, footer {
-        padding-left: 300px;
-    }
-
-    @media only screen and (max-width : 992px) {
-        header, main, footer {
-            padding-left: 0;
+        .background {
+            background-image: url("images/patterns/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
         }
-    }
-    .card.small {
-        height: 157px;
-    }
+        .side-nav li.socialLinkTab {
+            padding-left:32px;
+        }
+        .side-nav li>a.socialLink {
+            display: inline-block;
+            padding: 0 2px;
+            font-size:1.7em;
+        }
+        .button-collapse i {
+            margin-top:1em;
+        }
+        .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+            margin: 0 0px 0 0;
+        }
+        header, main, footer {
+            padding-left: 300px;
+        }
 
-    .chart.donut.custom {
-        width: 125px;
-        height: 125px;
-        margin: 1em;
-    }
-    .donut-chart h2 {
-        line-height: inherit;
-    }
-    .donut-chart h2 span {
-        margin-top: 0.17em;
-    }
-    .donut-chart .pie {
-        background-color: #3B5998;
-    }
-    .donut-chart.fill .pie, .pie-chart .pie {
-        box-shadow: 0 0 0 4px #3B5998;
-    }
-    .donut-chart.fill {
-        background-color: #0091CA;
-    }
+        @media only screen and (max-width : 992px) {
+            header, main, footer {
+                padding-left: 0;
+            }
+        }
+        .card.small {
+            height: 157px;
+        }
+
+        .chart.donut.custom {
+            width: 125px;
+            height: 125px;
+            margin: 1em;
+        }
+        .donut-chart h2 {
+            line-height: inherit;
+        }
+        .donut-chart h2 span {
+            margin-top: 0.17em;
+        }
+        .donut-chart .pie {
+            background-color: #004d40;
+        }
+        .donut-chart.fill .pie, .pie-chart .pie {
+            box-shadow: 0 0 0 4px #004d40;
+        }
+        .donut-chart.fill {
+            background-color: #9e9e9e;
+        }
+        .interests_icon{
+            font-size: 6em;
+        }
     </style>
   </head>
   <body>
@@ -79,7 +88,7 @@
       </div>
       <ul id="slide-out" class="side-nav fixed">
         <li><div class="userView" align="center">
-          <div class="background" style="background-color:#3B5998;">
+          <div class="background" style="background-color:#4e342e;">
             <!--img src="images/office.jpg" -->
             </div>
             <img class="circle" style="width:60%; height:60%;" src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.0-9/16003067_1286643174736875_8396071966794413957_n.jpg?oh=44aaed27b58d9901b87b45bb2b8fc57e&oe=59A208D5">
@@ -108,7 +117,7 @@
         <!--li><a target="_blank" href="https://www.instagram.com/simonalcover" class="waves-effect" ><i class="fa fa-instagram" aria-hidden="true"></i>/simonalcover</a></li-->
       </ul>
     </header>
-    <main>
+    <main style="background-color: #FDF5E6">
         <!--Work History Section-->
         <div class="row">
             <div class="col s12 m12">
@@ -154,42 +163,42 @@
                 <h5>Programming Languages</h5>
                 <div class="divider"></div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.80" data-title="C"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.90" data-title="C#"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.85" data-title="Java"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.90" data-title="PHP"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.99" data-title="CSS"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.99" data-title="HTML"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.80" data-title="Javascript"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart fill" data-percent="0.70" data-title="Assembly"></div>
                 </div>
@@ -202,22 +211,22 @@
                 <h5>Front-End Framework</h5>
                 <div class="divider"></div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart pie-chart fill" data-percent="0.75" data-title="Bootstrap CSS"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart pie-chart fill" data-percent="0.90" data-title="Material Design CSS"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart pie-chart fill" data-percent="0.85" data-title="MahApps MetroUI Toolkit"></div>
                 </div>
             </div>
-            <div class="col s6 m3">
+            <div class="col s6 m3" align="center">
                 <div class="chart donut custom">
                     <div class="donut-chart pie-chart fill" data-percent="0.85" data-title="Material Design Toolkit"></div>
                 </div>
@@ -229,6 +238,30 @@
             <div class="col s12 m12">
                 <h5>Interests</h5>
                 <div class="divider"></div>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="interests_icon">
+                    <i class="fa fa-tree " aria-hidden="true"></i>
+                    <h5>Outdoor</h5>
+                </div>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="interests_icon">
+                    <i class="fa fa-gamepad " aria-hidden="true"></i>
+                    <h5>Games</h5>
+                </div>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="interests_icon">
+                    <i class="fa fa-television" aria-hidden="true"></i>
+                    <h5>Movies</h5>
+                </div>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="interests_icon">
+                    <i class="fa fa-headphones " aria-hidden="true"></i>
+                    <h5>Music</h5>
+                </div>
             </div>
         </div>
 
