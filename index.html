@@ -19,36 +19,48 @@
     <!-- Perfect Scrollbar JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.7.0/js/perfect-scrollbar.jquery.min.js"></script>
     <!-- CSS Chart CSS-->
-    <link rel="stylesheet" href="chart.css">
+    <link rel="stylesheet" href="bower_components/csscharts.js/chart.css">
     <!-- CSS Chart JS -->
-    <script src="jquery.chart.js"></script>
+    <script src="bower_components/csscharts.js/jquery.chart.js"></script>
     <style>
-      .side-nav li.socialLinkTab {
+    .side-nav li.socialLinkTab {
         padding-left:32px;
-      }
-      .side-nav li>a.socialLink {
+    }
+    .side-nav li>a.socialLink {
         display: inline-block;
         padding: 0 2px;
         font-size:1.7em;
-      }
-      .button-collapse i {
-       margin-top:1em; 
-      }
-      .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+    }
+    .button-collapse i {
+        margin-top:1em;
+    }
+    .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
         margin: 0 0px 0 0;
-      }
-      header, main, footer {
+    }
+    header, main, footer {
         padding-left: 300px;
-      }
+    }
 
-      @media only screen and (max-width : 992px) {
+    @media only screen and (max-width : 992px) {
         header, main, footer {
-          padding-left: 0;
+            padding-left: 0;
         }
-      }
-      .card.small {
-       height: 157px; 
-      }
+    }
+    .card.small {
+        height: 157px;
+    }
+
+    .chart.donut.custom {
+        width: 125px;
+        height: 125px;
+        margin: 1em;
+    }
+    .donut-chart h2 {
+        line-height: inherit;
+    }
+    .donut-chart h2 span {
+        margin-top: 0.17em;
+    }
     </style>
   </head>
   <body>
@@ -88,70 +100,119 @@
       </ul>
     </header>
     <main>
-      <div class="">
         <div class="row">
-          <div class="col s12 m12">
-            <h5>Skill Set</h5>
-            <div class="divider"></div>
-          </div>
+            <div class="col s12 m12">
+                <h5>Work History</h5>
+                <div class="divider"></div>
+            </div>
+            <div class="col s12 m6 110">
+                <div class="card horizontal small">
+                    <div class="card-image">
+                        <img src="https://pbs.twimg.com/profile_images/715995939752775681/ABFhhNE4.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Web Designer</p>
+                            <p>Feb 2017 - Present</p>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://www.mopro.com/">mopro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 110">
+                <div class="card horizontal small">
+                    <div class="card-image">
+                        <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.0-9/1546204_605104072910220_285007483324752913_n.jpg?oh=4f706fb8696dbe71deaa4287af153445&oe=59C03C66">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Junior Web Developer</p>
+                            <p>Sept 2015 - Jan 2017</p>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://www.crownregency.com/">Crown Regency Hotels & Resorts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="row">
-          <div class="col s12 m12">
-            <h5>Work Experiences</h5>
-            <div class="divider"></div>
-          </div>
-          <div class="col s12 m6 110">
-            <div class="card horizontal small">
-              <div class="card-image">
-                <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.0-9/1546204_605104072910220_285007483324752913_n.jpg?oh=4f706fb8696dbe71deaa4287af153445&oe=59C03C66">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>Junior Web Developer</p>
-                  <p>Sept 2015 - Jan 2017</p>
-                </div>
-                <div class="card-action">
-                  <a href="https://www.crownregency.com/">Crown Regency Hotels & Resorts</a>
-                </div>
-              </div>
+            <div class="col s12 m12">
+                <h5>Programming Languages</h5>
+                <div class="divider"></div>
             </div>
-          </div>
-          
-          <div class="col s12 m6 110">
-            <div class="card horizontal small">
-              <div class="card-image">
-                <img src="https://pbs.twimg.com/profile_images/715995939752775681/ABFhhNE4.jpg">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>Web Designer</p>
-                  <p>Feb 2017 - Present</p>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.75" data-title="C"></div>
                 </div>
-                <div class="card-action">
-                  <a href="https://www.mopro.com/">mopro</a>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.90" data-title="C#"></div>
                 </div>
-              </div>
             </div>
-          </div>
-          
-          <!--div class="col s12 m3"> 
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="https://www.cebucitytour.com/wp-content/uploads/2014/07/crownregency.jpg">
-              </div>
-              <div class="card-content red darken-4">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.85" data-title="Java"></div>
+                </div>
             </div>
-          </div-->
-          
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.90" data-title="PHP"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.99" data-title="CSS"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.99" data-title="HTML"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.80" data-title="Javascript"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart fill" data-percent="0.85" data-title="Assembly"></div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="row">
+            <div class="col s12 m12">
+                <h5>Front-End Framework</h5>
+                <div class="divider"></div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart pie-chart fill" data-percent="0.75" data-title="Bootstrap CSS"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart pie-chart fill" data-percent="0.90" data-title="Material Design CSS"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart pie-chart fill" data-percent="0.85" data-title="MahApps MetroUI Toolkit"></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="chart donut custom">
+                    <div class="donut-chart pie-chart fill" data-percent="0.85" data-title="Material Design Toolkit"></div>
+                </div>
+            </div>
+        </div>
+
     </main>
   </body>
   
@@ -160,6 +221,7 @@
     $(".button-collapse").sideNav();
     // Initialize collapsible (uncomment the line below if you use the dropdown variation)
     //$('.collapsible').collapsible();
-    $('#slide-out').perfectScrollbar();  
+    $('#slide-out').perfectScrollbar();
+    $('.donut-chart').cssCharts({type:"donut"}).trigger('show-donut-chart');
   </script>
 </html>
