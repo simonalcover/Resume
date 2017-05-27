@@ -61,6 +61,15 @@
     .donut-chart h2 span {
         margin-top: 0.17em;
     }
+    .donut-chart .pie {
+        background-color: #3B5998;
+    }
+    .donut-chart.fill .pie, .pie-chart .pie {
+        box-shadow: 0 0 0 4px #3B5998;
+    }
+    .donut-chart.fill {
+        background-color: #0091CA;
+    }
     </style>
   </head>
   <body>
@@ -100,6 +109,7 @@
       </ul>
     </header>
     <main>
+        <!--Work History Section-->
         <div class="row">
             <div class="col s12 m12">
                 <h5>Work History</h5>
@@ -138,7 +148,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Programming Languages Section-->
         <div class="row">
             <div class="col s12 m12">
                 <h5>Programming Languages</h5>
@@ -146,7 +156,7 @@
             </div>
             <div class="col s6 m3">
                 <div class="chart donut custom">
-                    <div class="donut-chart fill" data-percent="0.75" data-title="C"></div>
+                    <div class="donut-chart fill" data-percent="0.80" data-title="C"></div>
                 </div>
             </div>
             <div class="col s6 m3">
@@ -181,11 +191,12 @@
             </div>
             <div class="col s6 m3">
                 <div class="chart donut custom">
-                    <div class="donut-chart fill" data-percent="0.85" data-title="Assembly"></div>
+                    <div class="donut-chart fill" data-percent="0.70" data-title="Assembly"></div>
                 </div>
             </div>
         </div>
 
+        <!--Front-end Framework Section-->
         <div class="row">
             <div class="col s12 m12">
                 <h5>Front-End Framework</h5>
@@ -213,15 +224,23 @@
             </div>
         </div>
 
+        <!--Interests Section-->
+        <div class="row">
+            <div class="col s12 m12">
+                <h5>Interests</h5>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+
     </main>
   </body>
   
   <script>
-    // Initialize collapse button
-    $(".button-collapse").sideNav();
-    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-    //$('.collapsible').collapsible();
-    $('#slide-out').perfectScrollbar();
-    $('.donut-chart').cssCharts({type:"donut"}).trigger('show-donut-chart');
+      $(document).ready(function () {
+          $(".button-collapse").sideNav();
+          $('#slide-out').perfectScrollbar();
+          $('.donut-chart').cssCharts({type:"donut"}).trigger('show-donut-chart');
+      });
   </script>
 </html>
