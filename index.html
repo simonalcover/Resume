@@ -77,6 +77,26 @@
 
             height: 1em;
         }
+        @page {
+            size: Letter;
+            margin: 0;
+        }
+        @media print {
+            * {-webkit-print-color-adjust:exact;}
+            html, body {
+                width: 210mm;
+                height: 297mm;
+            }
+            main{
+                background-color: #fff !important;
+            }
+            .print-spacer {
+                height:1.7em;
+            }
+            .fixed-action-btn{
+                display: none;
+            }
+        }
     </style>
   </head>
   <body>
@@ -121,7 +141,7 @@
             </li>
         </ul>
     </header>
-    <main style="background-color: #FDF5E6">
+    <main style="background-color: #FDF5E6;">
         <!--Work History Section-->
         <div class="row">
             <div class="col s12 m12">
@@ -161,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <div class="print-spacer"></div>
+
         <!--Core Competences Section-->
         <div class="row">
             <div class="col s12 m12">
@@ -194,7 +214,10 @@
             </div>
             <div class="col s12 m12 spacer"></div>
         </div>
-
+        <div class="print-spacer"></div>
+        <div class="print-spacer"></div>
+        <div class="print-spacer"></div>
+        <div class="print-spacer"></div>
         <!--Programming Languages Section-->
         <div class="row">
             <div class="col s12 m12">
@@ -270,7 +293,7 @@
                 </div>
             </div>
         </div>
-
+        <div class="print-spacer"></div>
         <!--Interests Section-->
         <div class="row">
             <div class="col s12 m12">
