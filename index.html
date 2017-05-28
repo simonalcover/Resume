@@ -77,6 +77,13 @@
 
             height: 1em;
         }
+        .custom-blockquote{
+        	font-size: 1.64rem;
+        	line-height: 110%;
+    			margin: .82rem 0 .656rem 0;
+    			padding-left: 0.5rem;
+    			border-color: #004D40;
+        }
         @page {
             size: Letter;
             margin: 0;
@@ -96,6 +103,18 @@
             .fixed-action-btn{
                 display: none;
             }
+            .side-nav {
+            		background: #ccc;
+						}
+        }
+
+        @media only screen and (max-width: 320px) {
+        	.card-content {
+        		font-size:0.75em;
+        	}
+        	.card-action {
+						font-size:0.75em;
+        	}
         }
     </style>
   </head>
@@ -103,11 +122,11 @@
     <header>
         <div class="fixed-action-btn">
 
-            <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large hide-on-large-only red">
-                <i class="fa fa-info" aria-hidden="true"></i>
+            <a href="#" data-activates="slide-out" class="button-collapse btn-floating waves-effect waves-light btn-large hide-on-large-only red">
+                <i class="fa fa-user" aria-hidden="true"></i>
             </a>
 
-            <a href="" onClick="window.print();return false" class="btn-floating btn-large hide-on-med-and-down  red">
+            <a href="" onClick="window.print();return false" class="btn-floating waves-effect waves-light btn-large hide-on-med-and-down  red">
                 <i class="large material-icons">print</i>
             </a>
         </div>
@@ -124,6 +143,7 @@
             </li>
             <li><a class="subheader" align="center">Personal Info</a></li>
             <li><div class="divider"></div></li>
+            <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-graduation-cap" aria-hidden="true"></i>BS in Computer Engineering</a></li>
             <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-birthday-cake" aria-hidden="true"></i>7th April 1992</a></li>
             <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Filipino</a></li>
             <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-language" aria-hidden="true"></i>Filipino(Tagalog), English</a></li>
@@ -134,9 +154,11 @@
             <li><a target="_blank" href="https://www.google.com.ph/maps/dir//10.3117697,123.8822383/@10.31187,123.8816965,18z" class="waves-effect" ><i class="fa fa-map-marker" aria-hidden="true"></i>Dream Homes Banawa</a></li>
             <li><a target="_blank" href="mailto:simonalcover@gmail.com" class="waves-effect" ><i class="fa fa-envelope" aria-hidden="true"></i>simonalcover@gmail.com</a></li>
             <li><a class="subheader" align="center">Links</a></li>
+						<li><div class="divider"></div></li>
             <li class="socialLinkTab">
                 <a target="_blank" href="https://www.facebook.com/simonalcover" class="socialLink" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                 <a target="_blank" href="https://www.instagram.com/simonalcover" class="socialLink" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://twitter.com/simonalcover" class="socialLink" ><i class="fa fa-twitter-square"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/felicisimo-iii-alcover-8812b2143/" class="socialLink" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </li>
         </ul>
@@ -145,7 +167,7 @@
         <!--Work History Section-->
         <div class="row">
             <div class="col s12 m12">
-                <h5>Work History</h5>
+                <blockquote class="custom-blockquote">Work History</blockquote>
                 <div class="divider"></div>
             </div>
             <div class="col s12 m6 110">
@@ -171,7 +193,7 @@
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <p>Junior Web Developer</p>
+                            <p>Junior Programmer</p>
                             <p>Sept 2015 - Jan 2017</p>
                         </div>
                         <div class="card-action">
@@ -185,7 +207,7 @@
         <!--Core Competences Section-->
         <div class="row">
             <div class="col s12 m12">
-                <h5>Core Competences</h5>
+                <blockquote class="custom-blockquote">Core Competences</blockquote>
                 <div class="divider"></div>
             </div>
             <div class="col s6 m3" align="center">
@@ -221,7 +243,7 @@
         <!--Programming Languages Section-->
         <div class="row">
             <div class="col s12 m12">
-                <h5>Programming Languages</h5>
+                <blockquote class="custom-blockquote">Programming Languages</blockquote>
                 <div class="divider"></div>
             </div>
             <div class="col s6 m3" align="center">
@@ -269,7 +291,7 @@
         <!--Front-end Framework Section-->
         <div class="row">
             <div class="col s12 m12">
-                <h5>Front-End Framework</h5>
+                <blockquote class="custom-blockquote">Front-End Framework</blockquote>
                 <div class="divider"></div>
             </div>
             <div class="col s6 m3" align="center">
@@ -297,7 +319,7 @@
         <!--Interests Section-->
         <div class="row">
             <div class="col s12 m12">
-                <h5>Interests</h5>
+                <blockquote class="custom-blockquote">Interests</blockquote>
                 <div class="divider"></div>
             </div>
             <div class="col s6 m3" align="center">
