@@ -34,9 +34,6 @@
             padding: 0 2px;
             font-size:1.7em;
         }
-        .button-collapse i {
-            margin-top:1em;
-        }
         .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
             margin: 0 0px 0 0;
         }
@@ -80,48 +77,69 @@
 
             height: 1em;
         }
+        @media print {
+            body {
+                display:table;
+                table-layout:fixed;
+                padding-top:0.44in;
+                padding-bottom:0.99in;
+                height:auto;
+            }
+            .fixed-action-btn{
+                display: none;
+            }
+            .print-spacer {
+                height:1em;
+            }
+        }
     </style>
   </head>
   <body>
     <header>
-      <div class="container"> 
-        <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only" style="color:#464646!important;"><i class="material-icons">menu</i></a>
-      </div>
+        <div class="fixed-action-btn">
+
+            <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large hide-on-large-only red">
+                <i class="large material-icons">menu</i>
+            </a>
+
+            <a href="" onClick="window.print();return false" class="btn-floating btn-large hide-on-med-and-down  red">
+                <i class="large material-icons">print</i>
+            </a>
+        </div>
         <div class="fixed-action-btn">
             <a href="" onClick="window.print();return false" class="btn-floating btn-large red">
                 <i class="large material-icons">print</i>
             </a>
         </div>
-      <ul id="slide-out" class="side-nav fixed">
-        <li><div class="userView" align="center">
-          <div class="background" style="background-color:#004D40;">
-            <!--img src="images/office.jpg" -->
-            </div>
-            <img class="circle" style="width:60%; height:60%;" src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.0-9/16003067_1286643174736875_8396071966794413957_n.jpg?oh=44aaed27b58d9901b87b45bb2b8fc57e&oe=59A208D5">
-            <span class="white-text name">Felicisimo A. Alcover, III</span>
-            <span class="white-text email">Full Stack Developer</span>
-          </div>
-        </li>
-        <li><a class="subheader" align="center">Personal Info</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-birthday-cake" aria-hidden="true"></i>7th April 1992</a></li>
-        <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Filipino</a></li>
-        <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-language" aria-hidden="true"></i>Filipino(Tagalog), English</a></li>
-        <li><a class="subheader" align="center">Contact Info</a></li>
-        <li><div class="divider"></div></li>
-        <li><a target="_blank" href="tel:0324011876" class="waves-effect" ><i class="fa fa-phone" aria-hidden="true"></i>(032) 401 1876</a></li>
-        <li><a target="_blank" href="tel:09279727246" class="waves-effect" ><i class="fa fa-mobile" aria-hidden="true"></i>(0927) 972 7246</a></li>
-        <li><a target="_blank" href="https://www.google.com.ph/maps/dir//10.3117697,123.8822383/@10.31187,123.8816965,18z" class="waves-effect" ><i class="fa fa-map-marker" aria-hidden="true"></i>Dream Homes Banawa</a></li>
-        <li><a target="_blank" href="mailto:simonalcover@gmail.com" class="waves-effect" ><i class="fa fa-envelope" aria-hidden="true"></i>simonalcover@gmail.com</a></li>
-        <li><a class="subheader" align="center">Links</a></li>
-        <li class="socialLinkTab">
-          <a target="_blank" href="https://www.facebook.com/simonalcover" class="socialLink" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://www.instagram.com/simonalcover" class="socialLink" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/felicisimo-iii-alcover-8812b2143/" class="socialLink" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        </li>
-        <!--li><a target="_blank" href="https://www.facebook.com/simonalcover" class="waves-effect" ><i class="fa fa-facebook" aria-hidden="true"></i>/simonalcover</a></li-->
-        <!--li><a target="_blank" href="https://www.instagram.com/simonalcover" class="waves-effect" ><i class="fa fa-instagram" aria-hidden="true"></i>/simonalcover</a></li-->
-      </ul>
+        <ul id="slide-out" class="side-nav fixed">
+            <li>
+                <div class="userView" align="center">
+                    <div class="background" style="background-color:#004D40;">
+                        <!--img src="images/office.jpg" -->
+                    </div>
+                    <img class="circle" style="width:60%; height:60%;" src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.0-9/16003067_1286643174736875_8396071966794413957_n.jpg?oh=44aaed27b58d9901b87b45bb2b8fc57e&oe=59A208D5">
+                    <span class="white-text name">Felicisimo A. Alcover, III</span>
+                    <span class="white-text email">Full Stack Developer</span>
+                </div>
+            </li>
+            <li><a class="subheader" align="center">Personal Info</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-birthday-cake" aria-hidden="true"></i>7th April 1992</a></li>
+            <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Filipino</a></li>
+            <li><a href="" onclick="return false;" class="waves-effect" ><i class="fa fa-language" aria-hidden="true"></i>Filipino(Tagalog), English</a></li>
+            <li><a class="subheader" align="center">Contact Info</a></li>
+            <li><div class="divider"></div></li>
+            <li><a target="_blank" href="tel:0324011876" class="waves-effect" ><i class="fa fa-phone" aria-hidden="true"></i>(032) 401 1876</a></li>
+            <li><a target="_blank" href="tel:09279727246" class="waves-effect" ><i class="fa fa-mobile" aria-hidden="true"></i>(0927) 972 7246</a></li>
+            <li><a target="_blank" href="https://www.google.com.ph/maps/dir//10.3117697,123.8822383/@10.31187,123.8816965,18z" class="waves-effect" ><i class="fa fa-map-marker" aria-hidden="true"></i>Dream Homes Banawa</a></li>
+            <li><a target="_blank" href="mailto:simonalcover@gmail.com" class="waves-effect" ><i class="fa fa-envelope" aria-hidden="true"></i>simonalcover@gmail.com</a></li>
+            <li><a class="subheader" align="center">Links</a></li>
+            <li class="socialLinkTab">
+                <a target="_blank" href="https://www.facebook.com/simonalcover" class="socialLink" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.instagram.com/simonalcover" class="socialLink" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/felicisimo-iii-alcover-8812b2143/" class="socialLink" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </li>
+        </ul>
     </header>
     <main style="background-color: #FDF5E6">
         <!--Work History Section-->
@@ -163,7 +181,7 @@
                 </div>
             </div>
         </div>
-
+        <div class="print-spacer"></div>
         <!--Core Competences Section-->
         <div class="row">
             <div class="col s12 m12">
