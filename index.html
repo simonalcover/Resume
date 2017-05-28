@@ -23,9 +23,6 @@
     <!-- CSS Chart JS -->
     <script src="bower_components/csscharts.js/jquery.chart.js"></script>
     <style>
-        .background {
-
-        }
         .side-nav li.socialLinkTab {
             padding-left:32px;
         }
@@ -70,8 +67,11 @@
         .donut-chart.fill {
             background-color: #9e9e9e;
         }
-        .interests_icon{
+        .custom_icon{
             font-size: 5em;
+        }
+        .custom_icon h5{
+            font-size: 1rem;
         }
         .spacer {
 
@@ -87,6 +87,13 @@
 				.card-action a{
 					color: #004D40 !important;
 					font-weight: 500;
+      	}
+      	.theme-color{
+      		background: #3e2723 ;
+      		background-color: #3e2723 ;
+      	}
+      	nav {
+    				background: #004D40;
       	}
         @page {
             size: Letter;
@@ -110,7 +117,9 @@
             .side-nav {
             		background: #ccc;
 						}
-            
+	        	nav {
+        				display: none;
+	        	}
         }
 
         @media only screen and (max-width: 320px) {
@@ -125,13 +134,17 @@
   </head>
   <body>
     <header>
+  			<nav class="hide-on-med-and-up">
+						<div class="nav-wrapper">
+								<a href="#" onclick="return false;" style="font-size: 2em;" class="brand-logo center">Portfolio</a>
+						</div>
+				</nav>
         <div class="fixed-action-btn">
-
-            <a href="#" data-activates="slide-out" class="button-collapse btn-floating waves-effect waves-light btn-large hide-on-large-only red">
+            <a href="#" data-activates="slide-out" class="button-collapse btn-floating waves-effect waves-light btn-large hide-on-large-only theme-color">
                 <i class="fa fa-user" aria-hidden="true"></i>
             </a>
 
-            <a href="" onClick="window.print();return false" class="btn-floating waves-effect waves-light btn-large hide-on-med-and-down  red">
+            <a href="" onClick="window.print();return false" class="btn-floating waves-effect waves-light btn-large hide-on-med-and-down  theme-color">
                 <i class="large material-icons">print</i>
             </a>
         </div>
@@ -216,25 +229,25 @@
                 <div class="divider"></div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-code " aria-hidden="true"></i>
                     <h5>Web Development</h5>
                 </div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-desktop " aria-hidden="true"></i>
                     <h5>Desktop App Development</h5>
                 </div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-android" aria-hidden="true"></i>
                     <h5>Android App Development</h5>
                 </div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-microchip" aria-hidden="true"></i>
                     <h5>Embedded Systems Development</h5>
                 </div>
@@ -328,25 +341,25 @@
                 <div class="divider"></div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-tree " aria-hidden="true"></i>
                     <h5>Outdoor</h5>
                 </div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-gamepad " aria-hidden="true"></i>
                     <h5>Games</h5>
                 </div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-television" aria-hidden="true"></i>
                     <h5>Movies</h5>
                 </div>
             </div>
             <div class="col s6 m3" align="center">
-                <div class="interests_icon">
+                <div class="custom_icon">
                     <i class="fa fa-headphones " aria-hidden="true"></i>
                     <h5>Music</h5>
                 </div>
