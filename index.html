@@ -22,7 +22,13 @@
     <link rel="stylesheet" href="bower_components/csscharts.js/chart.css">
     <!-- CSS Chart JS -->
     <script src="bower_components/csscharts.js/jquery.chart.js"></script>
+    <!-- CSS Chart JS -->
+    <script src="bower_components/lightbox2/src/js/lightbox.js"></script>
+    <!-- CSS Chart JS -->
+    <link rel="stylesheet" href="bower_components/lightbox2/src/css/lightbox.css">
+
     <style>
+
         .side-nav li.socialLinkTab {
             padding-left:32px;
         }
@@ -90,7 +96,6 @@
       	}
       	.theme-color{
       		background: #3e2723 ;
-      		background-color: #3e2723 ;
       	}
       	nav {
     				background: #004D40;
@@ -130,6 +135,23 @@
 						font-size:0.75em;
         	}
         }
+        .mid-image-container{
+
+            position: relative !important;
+            width: 200px !important;
+            height: 200px !important;
+
+        }
+        .mid-image {
+            padding: 0.5em !important;
+            position: absolute !important;
+            margin: auto !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+        }
+
     </style>
   </head>
   <body>
@@ -172,7 +194,7 @@
             <li><a target="_blank" href="https://www.google.com.ph/maps/dir//10.3117697,123.8822383/@10.31187,123.8816965,18z" class="waves-effect" ><i class="fa fa-map-marker" aria-hidden="true"></i>Dream Homes Banawa</a></li>
             <li><a target="_blank" href="mailto:simonalcover@gmail.com" class="waves-effect" ><i class="fa fa-envelope" aria-hidden="true"></i>simonalcover@gmail.com</a></li>
             <li><a class="subheader" align="center">Links</a></li>
-						<li><div class="divider"></div></li>
+            <li><div class="divider"></div></li>
             <li class="socialLinkTab">
                 <a target="_blank" href="https://www.facebook.com/simonalcover" class="socialLink" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                 <a target="_blank" href="https://www.instagram.com/simonalcover" class="socialLink" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -369,7 +391,70 @@
                 </div>
             </div>
         </div>
+        <div class="print-spacer"></div>
 
+        <!--works Section-->
+        <div class="row">
+            <div class="col s12 m12">
+                <blockquote class="custom-blockquote">Works</blockquote>
+                <div class="divider"></div>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="card">
+                    <div class="card-image mid-image-container">
+                        <img class='mid-image' src="https://2.bp.blogspot.com/-27P7ZWtgHVM/WBBBoSDBgOI/AAAAAAAAAPg/Ze9fiEOCFDMQ9UZf_Me9Y2trC23miIXUgCLcB/s400/Crown%2BRegency%2BHotel%2B%2526%2BTowers.jpg">
+                    </div>
+                    <div class="card-action">
+                        <a href="images/crown_regeny_hotels/home.png" data-lightbox="crown_regency_hotel">See Images</a>
+                        <a href="https://www.crownregency.com/" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+                <a href="images/crown_regeny_hotels/promo.png" style="display: none" data-lightbox="crown_regency_hotel">Image #3</a>
+                <a href="images/crown_regeny_hotels/contacts.png" style="display: none" data-lightbox="crown_regency_hotel">Image #3</a>
+            </div>
+            <div class="col s6 m3" align="center">
+                    <div class="card">
+                        <div class="card-image mid-image-container">
+                            <img class='mid-image' src="https://pbs.twimg.com/profile_images/1283353948/fuentetriangle_logo2.png">
+                        </div>
+                        <div class="card-action">
+                            <a href="images/fuente_triangle/home.png" data-lightbox="fuente_triangle">See Images</a>
+                        </div>
+                    </div>
+                    <a href="images/fuente_triangle/about%20us.png" style="display: none" data-lightbox="fuente_triangle">Image #3</a>
+                    <a href="images/fuente_triangle/contact%20us.png" style="display: none" data-lightbox="fuente_triangle">Image #3</a>
+                    <a href="images/fuente_triangle/projects.png" style="display: none" data-lightbox="fuente_triangle">Image #3</a>
+                    <a href="images/fuente_triangle/updates.png" style="display: none" data-lightbox="fuente_triangle">Image #3</a>
+                    <a href="images/fuente_triangle/admin.png" style="display: none" data-lightbox="fuente_triangle">Image #3</a>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="card">
+                    <div class="card-image mid-image-container">
+                        <img class='mid-image' src="http://www.travelsmart.net/ph/hotels/Crown_Regency_Hotel_and_Towers/pic1.jpg">
+                    </div>
+                    <div class="card-action">
+                        <a href="images/sky_experience/home.png" data-lightbox="sky_experience">See Images</a>
+                    </div>
+                </div>
+                <a href="images/sky_experience/home.png" style="display: none" data-lightbox="sky_experience">Image #3</a>
+                <a href="images/sky_experience/updates.png" style="display: none" data-lightbox="sky_experience">Image #3</a>
+                <a href="images/sky_experience/Amenities.png" style="display: none" data-lightbox="sky_experience">Image #3</a>
+                <a href="images/sky_experience/special%20offers.png" style="display: none" data-lightbox="sky_experience">Image #3</a>
+                <a href="images/sky_experience/contact%20us.png" style="display: none" data-lightbox="sky_experience">Image #3</a>
+                <a href="images/sky_experience/admin.png" style="display: none" data-lightbox="sky_experience">Image #3</a>
+            </div>
+            <div class="col s6 m3" align="center">
+                <div class="card">
+                    <div class="card-image mid-image-container">
+                        <img class='mid-image' src="https://discoverbadiancebu.github.io/info/images/discover_transparent.png">
+                    </div>
+                    <div class="card-action">
+                        <a href="images/badian/home.png" data-lightbox="Badian">See Images</a>
+                        <a href="https://discoverbadiancebu.github.io/info" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
   </body>
@@ -379,6 +464,17 @@
           $(".button-collapse").sideNav();
           $('#slide-out').perfectScrollbar();
           $('.donut-chart').cssCharts({type:"donut"}).trigger('show-donut-chart');
+
+      });
+      $(document).ready(function() {
+          lightbox.option({
+              'resizeDuration': 200,
+              'wrapAround': true,
+              'alwaysShowNavOnTouchDevices': true,
+          })
+          $('div.lightbox-group').each(function(){
+              $(this).find('a').lightBox();
+          });
       });
   </script>
 </html>
